@@ -259,8 +259,8 @@ endif
 PRODUCT_PACKAGES += $(AUDIO_DLKM)
 
 CONFIG_PAL_SRC_DIR := $(TOPDIR)$(BOARD_OPENSOURCE_DIR)/pal/configs/monaco
-CONFIG_HAL_SRC_DIR := $(TOPDIR)$(BOARD_OPENSOURCE_DIR)/audio-hal/primary-hal/configs/monaco
-CONFIG_HAL_COMMON_SRC_DIR := $(TOPDIR)$(BOARD_OPENSOURCE_DIR)/audio-hal/primary-hal/configs/common
+CONFIG_HAL_SRC_DIR := $(TOPDIR)$(BOARD_OPENSOURCE_DIR)/audio-hal/primary-hal-ar/configs/monaco
+CONFIG_HAL_COMMON_SRC_DIR := $(TOPDIR)$(BOARD_OPENSOURCE_DIR)/audio-hal/primary-hal-ar/configs/common
 
 ifneq ($(strip $(TARGET_USES_RRO)), true)
 #Audio Specific device overlays

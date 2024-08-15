@@ -82,10 +82,10 @@ LOCAL_VENDOR_MODULE := true
 LOCAL_MODULE_OWNER := qti
 
 LOCAL_C_INCLUDES := \
-        vendor/qcom/opensource/audio-hal/primary-hal/hal \
+        vendor/qcom/opensource/audio-hal/primary-hal-ar/hal \
         vendor/qcom/opensource/pal \
         $(call include-path-for, audio-effects) \
-        vendor/qcom/opensource/audio-hal/primary-hal/hal/audio_extn/
+        vendor/qcom/opensource/audio-hal/primary-hal-ar/hal/audio_extn/
 
 ifeq ($(strip $(AUDIO_FEATURE_ENABLED_DLKM)),true)
   LOCAL_HEADER_LIBRARIES += audio_kernel_headers
@@ -187,11 +187,11 @@ LOCAL_VENDOR_MODULE := true
 LOCAL_MODULE_OWNER := qti
 
 LOCAL_C_INCLUDES := \
-        vendor/qcom/opensource/audio-hal/primary-hal/hal \
+        vendor/qcom/opensource/audio-hal/primary-hal-ar/hal \
         vendor/qcom/opensource/pal \
         $(call include-path-for, audio-effects) \
         $(call include-path-for, audio-route) \
-        vendor/qcom/opensource/audio-hal/primary-hal/hal/audio_extn \
+        vendor/qcom/opensource/audio-hal/primary-hal-ar/hal/audio_extn \
         system/media/audio_utils/include
 
 ifeq ($(strip $(AUDIO_FEATURE_ENABLED_DLKM)),true)
