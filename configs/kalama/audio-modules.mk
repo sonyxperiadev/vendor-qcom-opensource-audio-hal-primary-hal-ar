@@ -106,7 +106,7 @@ ifeq ($(call is-board-platform-in-list,crow),true)
     AUDIO_MODULES += IDP_UPD_workspaceFileXml.qwsp
 endif
 AUDIO_MODULES += audioadsprpcd
-AUDIO_MODULES += android.hardware.audio.service_64
+AUDIO_MODULES += android.hardware.audio.service
 AUDIO_MODULES += fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd
 AUDIO_MODULES += fai__2.3.0_0.1__3.0.0_0.0__eai_1.36_enpu2_comp.pmd
 AUDIO_MODULES += fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd
