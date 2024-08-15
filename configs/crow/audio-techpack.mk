@@ -1,5 +1,5 @@
-include vendor/qcom/opensource/audio-hal/primary-hal/configs/crow/audio-modules.mk
-include vendor/qcom/opensource/audio-hal/primary-hal/configs/audio-generic-modules.mk
+include vendor/qcom/opensource/audio-hal/primary-hal-ar/configs/crow/audio-modules.mk
+include vendor/qcom/opensource/audio-hal/primary-hal-ar/configs/audio-generic-modules.mk
 include vendor/qcom/opensource/audio-kernel/audio_kernel_modules.mk
 
 

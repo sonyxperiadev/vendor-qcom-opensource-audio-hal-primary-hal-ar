@@ -1,5 +1,5 @@
 #Audio product definitions 
-include vendor/qcom/opensource/audio-hal/primary-hal/configs/audio-generic-modules.mk
+include vendor/qcom/opensource/audio-hal/primary-hal-ar/configs/audio-generic-modules.mk
 PRODUCT_PACKAGES += $(AUDIO_GENERIC_MODULES)
 
 PRODUCT_PACKAGES_DEBUG += $(MM_AUDIO_DBG)
@@ -13,14 +13,14 @@ ifeq ($(TARGET_USES_QMAA_OVERRIDE_AUDIO), false)
 ifeq ($(TARGET_USES_QMAA),true)
 AUDIO_USE_STUB_HAL := true
 TARGET_USES_AOSP_FOR_AUDIO := true
--include $(TOPDIR)vendor/qcom/opensource/audio-hal/primary-hal/configs/common/default.mk
+-include $(TOPDIR)vendor/qcom/opensource/audio-hal/primary-hal-ar/configs/common/default.mk
 else
 # Audio hal configuration file
--include $(TOPDIR)vendor/qcom/opensource/audio-hal/primary-hal/configs/$(TARGET_BOARD_PLATFORM)/$(TARGET_BOARD_PLATFORM).mk
+-include $(TOPDIR)vendor/qcom/opensource/audio-hal/primary-hal-ar/configs/$(TARGET_BOARD_PLATFORM)/$(TARGET_BOARD_PLATFORM).mk
 endif
 else
 # Audio hal configuration file
--include $(TOPDIR)vendor/qcom/opensource/audio-hal/primary-hal/configs/$(TARGET_BOARD_PLATFORM)/$(TARGET_BOARD_PLATFORM).mk
+-include $(TOPDIR)vendor/qcom/opensource/audio-hal/primary-hal-ar/configs/$(TARGET_BOARD_PLATFORM)/$(TARGET_BOARD_PLATFORM).mk
 endif
 
 ifeq ($(AUDIO_USE_STUB_HAL), true)
