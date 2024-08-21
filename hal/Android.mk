@@ -9,6 +9,7 @@ LOCAL_MODULE_OWNER := qti
 LOCAL_VENDOR_MODULE := true
 LOCAL_ARM_MODE := arm
 
+ifneq ($(PRODUCT_PLATFORM_SOD), true)
 LOCAL_VINTF_FRAGMENTS := ../configs/common/manifest_non_qmaa.xml
 ifeq ($(TARGET_BOARD_PLATFORM), anorak)
 $(warning "Update manifest fragement for anorak")
@@ -17,6 +18,7 @@ endif
 
 ifeq ($(strip $(AUDIO_FEATURE_ENABLED_LSM_HIDL)),true)
 LOCAL_VINTF_FRAGMENTS += ../configs/common/manifest_non_qmaa_extn.xml
+endif
 endif
 
 LOCAL_CFLAGS += -Wno-macro-redefined
