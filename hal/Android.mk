@@ -35,6 +35,7 @@ LOCAL_CFLAGS += -Wno-shorten-64-to-32
 LOCAL_CFLAGS += -Wno-tautological-compare
 LOCAL_CFLAGS += -Wno-unused-function
 LOCAL_CFLAGS += -Wno-unused-local-typedef
+LOCAL_CFLAGS += -Wno-format
 ifeq ($(filter 12 S, $(PLATFORM_VERSION)),)
 LOCAL_CFLAGS += -DUSEHIDL7_1
 endif
