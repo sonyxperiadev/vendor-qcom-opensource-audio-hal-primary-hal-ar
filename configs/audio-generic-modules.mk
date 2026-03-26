@@ -18,6 +18,7 @@ EFFECTS_DEFAULTS_SHARED_LIBRARIES := \
 
 EFFECTS_DEFAULTS_HEADERS_LIBRARIES := \
     libaudioeffectsaidlqti_headers \
+    libaudioutils_headers \
     libaudio_system_headers \
     libsystem_headers
 
