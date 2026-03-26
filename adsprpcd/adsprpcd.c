@@ -37,13 +37,18 @@
 
 #define VERIFY_PRINT_INFO 0
 
+#define VERIFY_EPRINTF ALOGE
+#define VERIFY_IPRINTF ALOGI
+
+#define AEE_ECONNREFUSED 0x72
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <dlfcn.h>
 #include <unistd.h>
 #include <errno.h>
-#include "verify.h"
-#include "AEEStdErr.h"
+#include <string.h>
+#include <log/log.h>
 #include <cutils/properties.h>
 
 #ifndef ADSP_DEFAULT_LISTENER_NAME
