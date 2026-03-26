@@ -26,6 +26,7 @@ LOCAL_SHARED_LIBRARIES:= \
 
 LOCAL_HEADER_LIBRARIES:= \
     $(EFFECTS_DEFAULTS_HEADERS_LIBRARIES) \
-    libacdb_headers
+    libacdb_headers \
+    kvh2xml_headers
 
 include $(BUILD_SHARED_LIBRARY)
