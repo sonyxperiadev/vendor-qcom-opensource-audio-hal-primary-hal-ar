@@ -12,8 +12,8 @@ cc_library_static {
         "libstagefright_foundation",
         "libutils",
         "libxml2",
-        "android.media.audio.common.types-V3-ndk",
-        "android.hardware.audio.core-V2-ndk",
+        "android.media.audio.common.types-V4-ndk",
+        "android.hardware.audio.core-V3-ndk",
     ],
     header_libs: [
         "libxsdc-utils",
